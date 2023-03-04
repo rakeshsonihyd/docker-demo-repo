@@ -1,0 +1,56 @@
+<!doctype html>
+<html ng-app="datatableApp">
+<head>
+    <title>Iterating Over Data</title>
+    <link rel="stylesheet" src="node_modules/@fortawesome/fontawesome-free/css.all.css">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <link href="styles/multiSelectStyle.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css" rel="stylesheet">
+    <link href="node_modules\js-treeview\dist\treeview.min.css" rel="stylesheet"></link>
+    <link data-require="bootstrap-css@*" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="navbar-brand" href="#!/">Data Table</a>
+            <a class="navbar-brand" href="#!/autoComplete">Auto-Complete</a>
+            <a class="navbar-brand" href="#!/modalView">Modal View</a>
+            <a class="navbar-brand" href="#!/multiselect">Multi-Select</a>
+          </div>
+        </div>
+      </nav>
+
+
+    <div ng-view></div>
+
+
+    <script src="scripts/angular-1.6.6/angular.min.js"></script>
+    <script src="scripts/angular-1.6.6/angular-animate.min.js"></script>
+    <script src="scripts/angular-1.6.6/angular-touch.min.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angularjs-datatables.js"></script>
+    <script src="scripts/angular.treeview.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/datatableController.js"></script>
+    <script src="app/controllers/treeViewController.js"></script>
+    <script src="app/controllers/modalView.js"></script>
+    <script src="app/controllers/modelHandlerController.js"></script>
+    <script src="app/controllers/autoCompleteController.js"></script>
+    <script src="app/controllers/multiSelectController.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js" integrity="sha256-zBy1l2WBAh2vPF8rnjFMUXujsfkKjya0Jy5j6yKj0+Q="
+        crossorigin="anonymous"></script>
+    <script src="node_modules\xlsx-js-style\dist\xlsx.bundle.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.4.js"></script>
+    
+    <!-- <script src="node_modules\js-treeview\dist\treeview.min.js"></script> -->  
+        
+</body>
+</html>
+
+

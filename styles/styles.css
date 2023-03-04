@@ -1,0 +1,114 @@
+table {
+    width: 500px;   
+}
+
+th {
+    text-align: left;
+    background-color: #efefef;
+    cursor: pointer;
+}
+/* Optional stylesheet for selectable rows */
+td[ng-selectable] {
+    cursor: pointer;
+    width: 25px;
+    padding: 8px !important;
+}
+td[ng-selectable]:after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #eee;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.4);
+}
+td[ng-selectable]:hover:after {
+    background: #ccc;
+}
+tr.selected td[ng-selectable]:after, td.selected[ng-selectable]:after {
+    content: '\2713'; /* unicode checkmark */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #2196F3;
+}
+tr.selected td {
+    background: #337ab7;
+    color: white;
+}
+.check-toggle {
+    cursor: pointer;
+    color: #555;
+}
+
+.selected .check-toggle {
+    color: white;
+}
+
+.check-toggle.fa-check-circle {
+    color: #090;
+}
+
+.container {
+    font-family: arial;
+    font-size: 24px;
+    margin: 25px;
+    width: 350px;
+    height: 100px;
+    outline: dashed 1px black;
+    text-align: center;
+    
+  }
+
+
+
+div[data-angular-treeview] {
+    /* prevent user selection */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* default */
+    font-family: Tahoma;
+    font-size:13px;
+    color: #555;
+    text-decoration: none;
+}
+div[data-tree-model] ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    overflow: hidden;
+}
+div[data-tree-model] li {
+    position: relative;
+    padding: 0 0 0 20px;
+    line-height: 20px;
+}
+div[data-tree-model] li .expanded {
+    padding: 1px 10px;
+    background-image: url("http://cfile23.uf.tistory.com/image/205B973A50C13F4B19D9BD");
+    background-repeat: no-repeat;
+}
+div[data-tree-model] li .collapsed {
+    padding: 1px 10px;
+    background-image: url("http://cfile23.uf.tistory.com/image/1459193A50C13F4B1B05FB");
+    background-repeat: no-repeat;
+}
+div[data-tree-model] li .normal {
+    padding: 1px 10px;
+    background-image: url("http://cfile23.uf.tistory.com/image/165B663A50C13F4B196CCA");
+    background-repeat: no-repeat;
+}
+div[data-tree-model] li i, div[data-tree-model] li span {
+    cursor: pointer;
+}
+div[data-tree-model] li .selected {
+    background-color: #aaddff;
+    font-weight: bold;
+    padding: 1px 5px;
+}

@@ -1,0 +1,25 @@
+
+
+<!-- We can check how this work in the script -->
+
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">TreeView Modal</h3>
+   </div>
+   <div class="modal-body" id="modal-body">
+    <div style="display:table-row; width:500px;">
+ 
+        <div style="display:table-cell; width:250px;">
+            <!-- <tree-model pre-selected="modalTreeView.checkedNode"></tree-model> -->
+            <div data-angular-treeview="true" data-tree-id="modalTreeView" data-tree-model="items" data-node-id="roleId" data-node-label="roleName" data-node-children="children"  data-checkbox-support="true" data-selected = {{selected}} data-complete-model = {{items}}  ng-click="printParent($event)"></div>
+        </div>
+   </div>
+   <p>{{modalTreeView.checkedNode}}</p>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>
+   </div>
+
+   

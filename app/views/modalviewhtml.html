@@ -1,0 +1,14 @@
+<body ng-app="datatableApp" ng-controller="ModalView" ng-cloak>
+    <div style="float:center;margin:5px 5px 0;" ALIGN="center">
+        <br> 
+        <button class="btn btn-success " data-toggle="modal" ng-click="showPopup()"><i class="material-icons"></i> <span>Modal Popup</span></button>
+        <br><br> 
+        <label>
+            <p ng-repeat="item in selected | filter:'' track by $index">
+              {{item}}
+            </p>
+        </label>
+    </div>
+  
+
+</body>

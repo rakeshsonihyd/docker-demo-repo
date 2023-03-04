@@ -1,0 +1,48 @@
+<body ng-controller="MoveCtrl">
+    <center>
+        <h1>Angular Js Dual Multi-Select Box</h1>
+    </center>
+    <hr />
+    <div class="parent">
+        <div style="float:left">
+            <div>
+                <center>
+                    Available Clients
+
+                </center>
+            </div>
+            <div>
+                <select size="5" multiple ng-model="available"
+                    ng-options="client as client.name for client in availableclients"
+                    style="width: 300px;height:150px"></select>
+            </div>
+        </div>
+        <div style="float:left; width: 100px; text-align:center">
+            <div>&nbsp;</div>
+            <input id="moveright" type="button" value=">"
+                ng-click="moveItem(available, availableclients,selectedclients)" style="width:40px;" />
+            <br>
+            <input id="moverightall" type="button" value=">>" ng-click="moveAll(availableclients,selectedclients)"
+                style="width:40px;" />
+            <br>
+            <input id="move left" type="button" value="<"
+                ng-click="moveItem(selected, selectedclients,availableclients)" style="width:40px;" />
+            <br>
+            <input id="moveleftall" type="button" value="<<" ng-click="moveAll(selectedclients,availableclients)"
+                style="width:40px;" />
+        </div>
+
+        <div style="float:left">
+            <div>
+                <center>
+                    Selected Clients
+                </center>
+            </div>
+            <div>
+                <select size="5" multiple ng-model="selected"
+                    ng-options="client as client.name for client in selectedclients"
+                    style="width: 300px;height:150px"></select>
+            </div>
+        </div>
+    </div>
+</body>

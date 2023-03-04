@@ -1,0 +1,11 @@
+<div ng-app="myapp" ng-controller="AutoCompleteController">  
+    <center>
+        <h1>AutoComplete dropdown Using Angularjs</h1>
+        <hr/>
+        Search with EmpId or EmpName : <input type="text" placeholder="Search...." ng-model="search" list="Employees"/>
+        <datalist id="Employees">
+            <option value=""></option>
+            <option ng-repeat="x in EmpDetails | filter:Search" value="{{x.id}} | {{x.name}}"></option>
+        </datalist>
+    </center>
+</div>  
